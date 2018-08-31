@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <meta name = "viewport" content = "width-device-width, initial-scale = 0.1">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<body>
+
+
+<form action='' method="post">
+First name:<br>
+<input type="date" name="stDate" min="2015-01-01" max="2016-12-31" value="{{request.form.stSate }}"><br>
+
+Last name:<br>
+
+<input type="date" name="enDate" min="2015-01-01" max="2016-12-31" value="{{request.form.enSate }}"><br>
+
+<input class="btn btn-default" type="submit" value="Start">
+</form>
+      {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}</p>
+      {% endif %}
+
+</body>
+</html>
